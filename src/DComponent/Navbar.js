@@ -32,18 +32,20 @@ const Navbar = () => {
                                 {item.title}
                             </Link>
                             </li>
+                            
                     
                 );
             })}
             <h2 className="nav-side ">
+            <a href = "">
+                <span className="span">Login </span>
+                </a>
+                </span>
                 <span>
                   <a href = ""> <span className="span"> SignUp</span></a>
                 </span>
                 <span>
-                <a href = "">
-                <span className="span">Login </span>
-                </a>
-                </span>
+               
               </h2>
         </div>
               
