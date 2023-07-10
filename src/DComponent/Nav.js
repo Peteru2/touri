@@ -1,47 +1,25 @@
 const NavItem = 
         [
             {
-                title : "DASHBOARD",
+                title : "HOME",
                 url: "/",
                 cName : "nav-links",
                 icon: "",
             },
             {
-                title : "CUSTOMERS",
-                url: "/",
+                title : "ABOUT",
+                url: "/About",
                 cName : "nav-links",
                 icon: "",
             },
             {
-                title : "ASSOCIATES",
-                url: "/",
+                title : "HISTORY",
+                url: "/History",
                 cName : "nav-links",
                 icon: "",
             },
-            {
-                title : "REQUESTS",
-                url: "/Requests",
-                cName : "nav-links",
-                icon: "",
-            },
-            {
-                title : "SCHEDULE",
-                url: "/Schedule",
-                cName : "nav-links",
-                icon: "",
-            },
-            {
-                title : "PAYMENTS",
-                url: "/payments",
-                cName : "nav-links",
-                icon: "",
-            },
-            {
-                title : "SETTINGS",
-                url: "/",
-                cName : "nav-links",
-                icon: "",
-            },
+
+            
         ]
         
  

@@ -1,6 +1,6 @@
 
 .nav{
-    background-color: white;
+    background-color: rgba(0,0,0,.7);
     margin: 0px;
     margin-bottom: 200px;
     height: 56px;
@@ -16,24 +16,31 @@
     /* transform: translate(50%); */
 
 }
-
+.mfooter{
+    background-color:rgba(0,0,0,.7)
+}
 .nav-logo{
-    color:rgb(57, 87, 219);
+    color:white;
     padding: 8px 0px;
     margin-right: 6%;
     margin-left: 10%;
-    font-size: 28px;
+    font-weight:900;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .nav-menu{
     display :grid;
     grid-template-columns: repeat(8, auto);
     grid-gap: 4%;
-    align-items: center;
+
+    /* align-items: center; */
 }
 .nav-list{
     padding: 15px 1%;
     margin: 0px;
+   
     /* display: inline; */
     /* flex-direction: row; */
 }
@@ -41,8 +48,9 @@
     display: none
 }
   .nav-links{
-    color:black;
-    font-size: 13px;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
     padding: 17px 3%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,34 +58,43 @@
    
 }
 .nav-links:hover{
-    border-bottom: 2px solid blue;
-    color:rgb(57, 87, 219);
+    border-bottom: 5px solid rgba(255, 255, 255,.8);
+    color: rgba(255, 255, 255,.8)
+    
 }
 .nav-side{
     margin-top: 3px;
-    margin-left: 50%;
+    margin-left: 90%;
     display :flex;
     font-size: 20px;
 
 }
-span{
+.aside{
     margin-right: 2%;
-   background-color: rgb(57, 87, 219);
     border-radius: 4px;
+    padding: 9px 4px 3px;
+    flex-direction: row;
+    font-size:100%
+}
+.aside a {text-decoration: none;
+    font-size: 15px;
+    color:white;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.aside .span{
+/* flex-direction: row; */
+padding: 8px;
+border-radius: 5px;
+background-color: rgb(57, 87, 219);
 color: white;
-padding: 2px 4px 3px;
-flex-direction: row;
-font-size:100%
-}
-span a {text-decoration: none;}
-.span{
-flex-direction: row;
 display: flex;
+
 }
- .fa-chevron-down{   
-    font-size: 10px;
-   padding-left: 4px;
-   margin-top: 4px;
+.aside .log{
+    padding-top: 300px;
+    margin-top: 20px;
 }
 
 @media only screen  and (max-width: 1080px){
@@ -87,9 +104,15 @@ display: flex;
         margin: 0;
         /* position: fixed; */
     }
+    
+   
+    .menu-icon .fa-bars{
+        color: white;
+    }
 
     .nav-menu {
         background-color: #fff;
+        color:rgba(0,0,0,.7);
         width: 100%;
         height: auto;
         position: absolute;
@@ -103,35 +126,38 @@ display: flex;
         padding: 80px 0 30px 0;
         margin: 0;
         z-index: 99;
-        transition: 0.3s ease-in-out;
-
-
-    
+        transition: 0.3s ease-in-out;    
     }
+
     .nav-menu.active{
         left: 0;
         opacity: 1;
         z-index: -1;
 
     }
+    .nav-ogo{
+        color: white
+    }
+    .nav-ogo.active{
+        color: rgba(0,0,0,.7);
+    }
     .nav-links {
-        /* background-color: red; */
+        color:rgba(0,0,0,.7);
         display: block;
         width: 100%;
         padding:  20px;
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin: 0px;
-        
-    
+        margin: 0px;    
     }
-    .nav-links:hover{
-     color: #fff;
-        background-color:rgb(57, 87, 219);
-    border-bottom: none;
 
+    .nav-links:hover{
+        color: #fff;
+        background-color:rgba(0,0,0,.7);
+        border-bottom: none;
     }
+
     .nav-list{
         padding: 0px;
     }
@@ -153,18 +179,30 @@ display: flex;
         margin-left: 78%;
         display: block;
         cursor: pointer;
-        color: black;
+        /* color: white; */
     }
     .nav-logo{
         margin-left: 3%;
     
     }
-     
+     .aside a{
+        color: rgba(0,0,0,.7);
+        font-weight: bold;
+     }
+
 }
-@media only screen  and (max-width: 480px){
+/* @media only screen  and (min-width:481px) and (max-width: 900px){ */
+@media only screen  and (min-width:500px) and (max-width:960px){
     .menu-icon{
         padding-top: 10px;
         font-size: large;
-        margin-left: 71%;
+        margin-left: 66%;
+    }
+}
+@media only screen  and (max-width:500px){
+    .menu-icon{
+        padding-top: 10px;
+        font-size: large;
+        margin-left: 55%;
     }
 }

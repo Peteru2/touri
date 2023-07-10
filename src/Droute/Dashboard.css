@@ -1,0 +1,10 @@
+.main-section {
+    background-image: url('../Ogbomoso2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .div{ background-image: url('../Ogbomoso2.jpg');}
+  .img-shadow{
+    box-shadow: ;
+  }
+ .navbg-color{ background-color:rgba(0,0,0,.7)}

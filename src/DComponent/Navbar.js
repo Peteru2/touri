@@ -15,15 +15,15 @@ const Navbar = () => {
    return (
    
         <nav className="nav">
-            <h2 className="nav-logo">
-              Touri
+            <h2 className="nav-logo" style={name? { color :'rgba(0,0,0,.7)'}:{color: 'white'}}>
+              O-Tour   
             </h2>
 
             <div className="menu-icon" onClick={handleClick}>
                 <i className = {name ? "fa fa-times" : "fa fa-bars"}></i>
             </div>
 
-            <div className = {name ? "nav-menu active":"nav-menu"}>
+            <div className = {name ? "nav-menu active ":"nav-menu"}>
             {NavItem.map((item,index) => {
                 return (
                           
@@ -37,15 +37,15 @@ const Navbar = () => {
                 );
             })}
             <h2 className="nav-side ">
-            <a href = "">
-                <span className="span">Login </span>
-                </a>
+            <span className="aside">
+                <a href = "/" className="log">Login </a>
                 </span>
-                <span>
-                  <a href = ""> <span className="span"> SignUp</span></a>
+
+                <span className="aside">
+                  <a href = "/"  className="span"> SignUp</a>
                 </span>
-                <span>
-               
+                
+                
               </h2>
         </div>
               
