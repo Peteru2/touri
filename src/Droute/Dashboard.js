@@ -20,7 +20,7 @@ function Dashboard (){
           {ImgList.map((myimg, inde)=>{
             return(
                 <a href = "/" className='no-underline hover:underline hover:p-3 ' key={inde}>
-                <div className='mb-3 border-b-2 pb-2 '><img src = {myimg.url} className='rounded-lg hover:border-6 ' alt = "imge"></img>
+                <div className='mb-3 border-b-2 pb-2 '><img src = {myimg.imgLink} className='rounded-lg hover:border-6 ' alt = "imge"></img>
                 <h2 className='mt-2'>{myimg.title}</h2>
                 <a href = "History text-blue">Explore</a>
                </div>
