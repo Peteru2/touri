@@ -4,21 +4,21 @@ const ImgList =
         [
             {
                 title : "Lautech Ogbomoso",
-                imgLink: "../lautech.jpg",
+                imgLink: lau,
                 cName : "nav-links",
                 icon: "",
             },
             {
                 title : "Lautech Ogbomoso",
-                imgLink: {img}, 
+                imgLink: img, 
             }, 
             {
                 title : "lautech Ogbomoso",
-                imgLink:{img}
+                imgLink:img
             },
             {
                 title : "lautech Ogbomoso",
-                imgLink: {lau},
+                imgLink: lau,
                 
             },
            
